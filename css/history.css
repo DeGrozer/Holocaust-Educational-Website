@@ -1,0 +1,738 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior:smooth;
+}
+
+body {
+  background: #3a3838;
+  min-height: 100vh;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  padding: 20px 40px;
+  z-index: 100;
+  letter-spacing: 2px;
+  background-color: transparent;
+}
+
+header.sticky {
+  background-color: #000;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px 40px;
+}
+
+header.sticky .logo {
+  font-size: 1.5em;
+}
+
+header.sticky ul {
+  padding-top: 0;
+}
+
+header .logo {
+  text-align: center;
+  position: relative;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.6s;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: bold 14px 'Open Sans', arial, sans-serif;
+  padding-top: 20px;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+header ul li {
+  display: inline-block;
+  list-style: none;
+}
+
+header ul li a {
+  position: relative;
+  margin: 0 16px;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transition: 0.6s;
+  display: block;
+}
+
+header a {
+  display: block;
+  text-align: center;
+}
+
+.landing {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  font-variant: var(--text-lighter);
+  background: linear-gradient(rgba(0, 0, 0, 0.557), rgb(46, 45, 45));
+  background-repeat: no-repeat;
+}
+
+header ul li a:hover {
+  color: #dd7064;
+}
+
+
+hr.hr-3 {
+  border: 0;
+  height: 0;
+  border-top: 1px solid #8c8c8c;
+}
+/*body*/
+
+.intro {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.647),
+      rgb(0, 0, 0)),
+    url(https://d3k74ww17vqc8e.cloudfront.net/app/uploads/2019/01/24225548/Struggle-to-Survive-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 50vh;
+  z-index: -1;
+}
+
+.table-of-contents {
+  position: sticky;
+  top: 90px;
+  float: left;
+  width: 280px;
+  background-color: #d2cfcf;
+  padding: 1rem;
+  margin-top: 50px;
+  margin-left: 20px;
+  border-radius: 8px;
+  z-index: 50;
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
+}
+
+.table-of-contents h2 {
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #333;
+  border-bottom: 2px solid #af2f23;
+  padding-bottom: 10px;
+}
+
+.table-of-contents nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.table-of-contents nav li {
+  margin: 0.5rem 0;
+}
+
+.table-of-contents nav a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  border-left: 3px solid transparent;
+}
+
+.table-of-contents nav a:hover {
+  background-color: rgba(175, 47, 35, 0.1);
+  color: #af2f23;
+}
+
+.table-of-contents nav a.active {
+  background-color: rgba(175, 47, 35, 0.2);
+  color: #af2f23;
+  border-left: 3px solid #af2f23;
+  font-weight: 600;
+}
+
+#hays
+{
+font-weight: bold;
+text-align:center;
+
+}
+.title {
+  color: white;
+  font-size: 50px;
+  position: relative;
+  text-align: center;
+  padding-top: 190px;
+
+}
+
+/*for highlighting the texts */
+
+#highlight {
+  color: #09348a;
+
+}
+
+.po {
+  height: 90vh;
+  background: #c9bbbb;
+  border-radius: 5px;
+  box-shadow: hsla(0, 0, 0, .2) 0 4px 2px -2px;
+  font-weight: 200;
+  margin-left: 320px;
+  margin-top: 48px;
+  width: 70%;
+  padding-top: 0;
+}
+
+#po {
+  position: absolute;
+  top: 50px;
+  padding: 20px;
+}
+
+.content {
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding: 4rem;
+  justify-content: center;
+  line-height: 2.0;
+  font-weight: 400;
+  font-size: 22px;
+  color: #000000;
+}
+
+
+.po1 {
+
+  height: 290vh;
+  background: #c9bbbb;
+  border-radius: 5px;
+  box-shadow: hsla(0, 0, 0, .2) 0 4px 2px -2px;
+  font-weight: 100;
+  margin-left: 320px;
+  margin-top: 48px;
+  width: 70%;
+  padding-top: 0;
+}
+
+/*news*/
+.container {
+  float: left;
+  margin-right: 35px;
+}
+
+#picture {
+  float: left;
+  margin-top: 35px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  width: 250px;
+  height: 350px;
+}
+
+figcaption {
+  font-size: 15px;
+  font-style: italic;
+  margin-top: 5px;
+  text-align: center;
+}
+
+/*end*/
+
+/*holocaust video nbc*/
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container1 iframe {
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
+/*end*/
+
+
+.po2 {
+  height: 530vh;
+  background: #c9bbbb;
+  border-radius: 5px;
+  box-shadow: hsla(0, 0, 0, .2) 0 4px 2px -2px;
+  font-weight: 100;
+  margin-left: 320px;
+  margin-top: 48px;
+  width: 70%;
+  padding-top: 0;
+}
+
+
+/*rise to power*/
+
+
+.rise {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#first {
+  width: 450px;
+  height: 250px;
+}
+
+/*end*/
+
+/*second*/
+.kristallnacht {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#second {
+  width: 450px;
+  height: 250px;
+}
+
+/*end*/
+
+
+
+/*se*/
+.ghetto {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#second {
+  width: 450px;
+  height: 250px;
+}
+
+/*end*/
+
+/*third*/
+#third {
+  width: 450px;
+  height: 250px;
+}
+
+
+/*fourth*/
+.kill {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#fourth {
+  width: 450px;
+  height: 250px;
+}
+
+/*end*/
+
+
+/*fifth*/
+
+.camp {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#fifth {
+  width: 450px;
+  height: 250px;
+}
+
+/*end*/
+.final {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#sixth {
+  width: 450px;
+  height: 250px;
+}
+
+
+.po3 {
+  height: 240vh;
+  background: #c9bbbb;
+  border-radius: 5px;
+  box-shadow: hsla(0, 0, 0, .2) 0 4px 2px -2px;
+  font-weight: 100;
+  margin-left: 320px;
+  margin-top: 48px;
+  width: 70%;
+  padding-top: 0;
+
+}
+
+/*liberation*/
+
+.liberation {
+  padding-top: 20px;
+  float: right;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+  text-align: center;
+
+}
+
+#seventh {
+  width: 430px;
+  height: 350px;
+  margin-right:20px;
+}
+
+.liberation .figcaption {
+  display: block;
+
+  text-align: center;
+}
+
+.content1 {
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding: 4rem;
+  justify-content: center;
+  line-height: 2.0;
+  font-weight: 400;
+  font-size: 22px;
+  color: #000000;
+}
+
+
+.po4 {
+  height: 55vh;
+  background: #c9bbbb;
+  border-radius: 5px;
+  box-shadow: hsla(0, 0, 0, .2) 0 4px 2px -2px;
+  font-weight: 100;
+  margin-left: 320px;
+  margin-top: 20px;
+  width: 70%;
+  padding-top: 0;
+  margin-bottom:50px;
+}
+
+.content4{
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding: 4rem;
+  justify-content: center;
+  line-height: 2.0;
+  font-weight: 400;
+  font-size: 22px;
+  color: #000000;
+}
+
+/*footer*/
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a.active {
+  color:#af2f23;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+  .table-of-contents {
+    position: relative;
+    float: none;
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .content {
+    padding: 2rem;
+    font-size: 18px;
+  }
+
+  .container img,
+  .container1 iframe,
+  .rise img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #picture {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  header ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 15px;
+  }
+
+  header ul li a {
+    margin: 5px 10px;
+    font-size: 12px;
+  }
+
+  header .logo {
+    font-size: 1.5em;
+  }
+
+  .intro {
+    height: 35vh;
+  }
+
+  .title {
+    font-size: 35px;
+  }
+
+  .table-of-contents {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .content {
+    padding: 1.5rem;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .container1 iframe {
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+  }
+
+  #first {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* Small Mobile */
+@media screen and (max-width: 480px) {
+  header .logo {
+    font-size: 1.2em;
+  }
+
+  header ul li a {
+    margin: 4px 6px;
+    font-size: 10px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .content {
+    padding: 1rem;
+    font-size: 14px;
+  }
+
+  .container1 iframe {
+    height: 180px;
+  }
+}
+
+/* ========== RESPONSIVE FIXES FOR CONTENT SECTIONS ========== */
+
+@media screen and (max-width: 1024px) {
+  .table-of-contents {
+    position: relative;
+    float: none;
+    width: 100%;
+    margin: 20px auto;
+    top: auto;
+  }
+
+  .po, .po1, .po2, .po3, .po4 {
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+    min-height: auto;
+  }
+
+  .content, .content4 {
+    padding: 2rem;
+    font-size: 18px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  #picture {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  #first, #second, #third, #fourth, #fifth, #sixth {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header.sticky {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 15px;
+  }
+
+  header.sticky .logo {
+    font-size: 1.2em;
+  }
+
+  header.sticky ul {
+    gap: 2px;
+  }
+
+  header.sticky ul li a {
+    margin: 2px 5px;
+    font-size: 10px;
+  }
+
+  .po, .po1, .po2, .po3, .po4 {
+    margin-left: 0;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .content, .content4 {
+    padding: 1rem;
+    font-size: 16px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .content4 a {
+    word-break: break-word;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .container {
+    float: none;
+    margin: 0 auto;
+  }
+
+  .container1 iframe {
+    width: 100%;
+    height: 250px;
+  }
+
+  #picture {
+    float: none;
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+  }
+
+  .rise, .kristallnacht, .ghetto, .kill, .camp, .final {
+    padding: 10px;
+  }
+
+  #first, #second, #third, #fourth, #fifth, #sixth {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  #hays {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header.sticky {
+    padding: 8px 10px;
+  }
+
+  header.sticky .logo {
+    font-size: 1em;
+  }
+
+  header.sticky ul li a {
+    margin: 2px 4px;
+    font-size: 9px;
+  }
+
+  .content, .content4 {
+    padding: 0.8rem;
+    font-size: 14px;
+  }
+}
+  
